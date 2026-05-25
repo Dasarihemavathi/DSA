@@ -1,0 +1,8 @@
+nums=[12,5,3,3,32,54,23,64,23,25,2,-4,-12,3,-80]
+nums=set(nums)
+nums=list(nums)
+for i in range(0,len(nums)-1+1,1):
+    for j in range(i+1,len(nums)-1+1,1):
+        if nums[i]>nums[j]:
+            nums[i],nums[j]=nums[j],nums[i]
+print("the 6th smallest number is:",nums[0])

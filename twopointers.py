@@ -1,0 +1,11 @@
+a=[10,20,30,40,50,60,70,80,10]
+print(a)
+i=0
+j=len(a)-1
+while i<j:
+    a[i]=a[i]+a[j]
+    a[j]=a[i]-a[j]  
+    a[i]=a[i]-a[j]
+    i=i+1
+    j=j-1
+print(a) 
